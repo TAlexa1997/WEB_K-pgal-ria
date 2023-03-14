@@ -73,5 +73,43 @@ footer{
         grid-template-columns: auto auto auto;
         margin: 30px;
     }
+
+    input{
+        font-size: 30px;
+        background-color: rgba(32, 31, 31, 0.588);
+        color: white;
+        cursor: pointer;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1fr);
+        height: 400px;
+        margin: 0px;
+        
+    }
+    article img{
+        height: 100%;
+        width: 100%;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        margin: 0px;
+    }
+    input{
+        font-size: 10px;
+        background-color: rgba(32, 31, 31, 0.588);
+        color: white;
+        cursor: pointer;
+    }
+
+    footer{
+        font-size: 12px;
+    }
 }
 
