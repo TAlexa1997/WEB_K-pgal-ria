@@ -82,18 +82,32 @@ footer{
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+    article{
+        height: 450px;
+    }
+
+    article img {
+        padding: 10px;
+    }
+    
+
+}
+
 @media only screen and (max-width: 400px) {
     article{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(1fr);
-        height: 400px;
+        height: 300px;
         margin: 0px;
         
     }
     article img{
         height: 100%;
         width: 100%;
+        padding: 5px;
     }
 
     section{
