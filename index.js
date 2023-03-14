@@ -1,14 +1,14 @@
 window.addEventListener("load", init);
 var kepLista = [
-  "képek/9dHdawT-siberian-husky-wallpaper.jpg",
-  "képek/ck8RvOm-siberian-husky-wallpaper.jpg",
-  "képek/E97OfW1-siberian-husky-wallpaper.jpg",
-  "képek/EfqK5ho-siberian-husky-wallpaper.jpg",
-  "képek/GOQTC7J-siberian-husky-wallpaper.jpg",
-  "képek/HUjZnqI-siberian-husky-wallpaper.jpg",
-  "képek/jC8Qevv-siberian-husky-wallpaper.jpg",
-  "képek/Qom1Iwe-siberian-husky-wallpaper.jpg",
-  "képek/yIBRXxO-siberian-husky-wallpaper.jpg",
+  "képek/1.jpg",
+  "képek/2.jpg",
+  "képek/3.jpg",
+  "képek/4.jpg",
+  "képek/5.jpg",
+  "képek/6.jpg",
+  "képek/7.jpg",
+  "képek/8.jpg",
+  "képek/9.jpg",
 ];
 
 function init() {
@@ -16,7 +16,7 @@ function init() {
   let text = "";
   for (var i = 0; i < kepLista.length; i++) {
     text += `<div class="kepek">
-            <img src="${kepLista[i]}" alt="">          // $, -jelel tudjuk mutatni neki hog változó lesz az értéke de csak akkor ha ALT Gr+7 idézőjelet használjuk
+            <img src="${kepLista[i]}" alt="kep">          // $, -jelel tudjuk mutatni neki hog változó lesz az értéke de csak akkor ha ALT Gr+7 idézőjelet használjuk
         </div>`;
   }
   console.log(ARTICLEELEM, text);
@@ -41,3 +41,40 @@ function keprekattint(i) {
   nagykep[0].src = kepLista[i];
   nagykep[0].src = event.target.src;
 }
+
+i = 1;  
+max = 8;  
+function leptet1()  
+{  
+    if(i<=1)  
+    {  
+        i = max;  
+        load();  
+    }  
+    else  
+    {  
+        i--;  
+        load();  
+    }  
+}  
+
+function leptet2()  
+{  
+    if(i>=max)  
+    {  
+        i = 1;  
+        load();  
+    }  
+    else  
+    {  
+        i++;  
+        load();  
+    }  
+}  
+
+function load()  
+{  
+  kep.src = kepLista[i];  
+}  
+
+
